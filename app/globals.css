@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: var(--font-inter), var(--font-suwannaphum) !important;
+}
+
+.none-scroll-bar::-webkit-scrollbar {
+	display: none;
+}
+
