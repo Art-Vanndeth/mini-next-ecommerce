@@ -1,0 +1,9 @@
+version: '3'
+  services: 
+    ecommerce: 
+      build: 
+        context: 
+        dockerfile: Dockerfile
+      restart: always
+      port: 
+        -
