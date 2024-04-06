@@ -1,9 +1,15 @@
 version: '3'
-services: 
-  ecommerce: 
-    build: 
+services:
+  makara:
+    image: vandeth_nextjs:latest
+    build:
       context: .
       dockerfile: Dockerfile
     restart: always
-    ports: 
+    ports:
       - 3224:3000
+    networks:
+      - data_analytics
+networks:
+  data_analytics:
+    external: true 
