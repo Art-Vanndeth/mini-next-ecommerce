@@ -2,8 +2,8 @@ version: '3'
   services: 
     ecommerce: 
       build: 
-        context: 
+        context: .
         dockerfile: Dockerfile
       restart: always
-      port: 
-        -
+      ports: 
+        - 3224:3000
